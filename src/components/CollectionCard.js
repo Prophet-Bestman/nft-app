@@ -2,7 +2,7 @@ import React from "react";
 import ethImg from "../assets/weth.png";
 import "./CollectionCard.css";
 
-const CollectionCard = ({ id, name, properties, img }) => {
+const CollectionCard = ({ id, name, traits, img }) => {
   return (
     <div className="collection-card">
       <img src={img} alt="" />
@@ -13,8 +13,7 @@ const CollectionCard = ({ id, name, properties, img }) => {
         </div>
         <div className="price-container">
           <img src={ethImg} alt="" className="eth-img" />
-          <div className="price">{9}</div>
-          {/* <div className="price">{properties[0]?.value}</div> */}
+          <div className="price">{traits[0]?.value}</div>
         </div>
       </div>
     </div>

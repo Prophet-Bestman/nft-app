@@ -1,0 +1,11 @@
+.collection {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  flex-direction: row;
+}
+
+.collection::-webkit-scrollbar {
+  display: none;
+}
